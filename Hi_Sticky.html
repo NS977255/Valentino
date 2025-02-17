@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Love ya Sticky</title>
+        <link rel = "icon" type = "img/jpg" href = "GermanFest.jpg">
+
+        <style>
+            body {
+                background: lightpink;
+                font-family: sans-serif;
+                color: red;
+                text-shadow: 2px 2px 2px white;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            button {
+                width: 90px;
+                height: 55px;
+                font-size: 20px;
+                color: red;
+                background: papayawhip;
+                font-family: sans-serif;
+            }
+
+            .butCon {
+                text-align: center;
+            }
+
+            .large {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            p {
+                text-align: center;
+                font-size: 60px;
+            }
+
+            .f-word {
+                animation: spin 5s linear infinite;
+            }
+
+            @keyframes spin {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+
+        </style>
+    </head>
+
+
+
+    <body>
+        <h1>Happy Belated Valentines Sweaty</h1>
+        <h2>I thought this would be a funny thing to do to test stuff out</h2>
+        <br>
+
+        <a href = "https://www.gettyimages.com/detail/news-photo/three-year-old-jewish-
+        boy-cries-as-he-is-having-his-first-news-photo/57623622" target = "_blank">
+            <img src = "Crying_lol.jpg" width = "400" height = "500" class = "center" >
+        </a>
+        <br><br><br>
+
+        <h2>Anywho, see this button below? It adds one for each click<br>
+            And the other one subtracts one for each click. <br>
+            click it for as much as you love me, on a scale of -100-100 :)
+        </h2>
+        
+        <div class = "butCon">
+            <button id = "uB">
+                Up One :)
+            </button>
+
+            <button id = "dB">
+                Down One :(
+            </button>
+
+            <h2 id = "counter">0</h2>
+
+            <button id = "sub" style = "font-size: 16px;">
+                Receive Response:
+            </button>
+
+            <br>
+        </div>
+
+        <div class = "large">
+            <p id = "result"></p>
+            <p class = "f-word" id = "f-word"></p>
+        </div>
+
+        <div class = "large">
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <img src = "Nah.jpg" width = 500px height = 700px>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <h2>Nosy bitch...</h2>
+        <br>
+
+        <script>
+            let count = 0;
+
+            const upBut = document.getElementById("uB");
+            const downBut = document.getElementById("dB");
+            const subBut = document.getElementById("sub");
+
+            upBut.addEventListener('click', () => {
+
+                if(count < 100) {
+                    count++;
+                    document.getElementById("counter").textContent = count;
+                }
+                
+                else {
+                    document.getElementById("counter").textContent = "Erm, it doesn't go that high...";
+                }
+            });
+
+            downBut.addEventListener('click', () => {
+                if(count > -100) {
+                    count--;
+                    document.getElementById("counter").textContent = count;
+                }
+
+                else {
+                    document.getElementById("counter").textContent = "Surely you don't hate me that much...";
+                }
+            });
+
+            subBut.addEventListener('click', () => {
+                if(count == -100) {
+                    document.getElementById("f-word").textContent = "You're a Faggot!!";
+                    document.getElementById("result").textContent = "";
+                }
+
+                else if(count <= -80 && count >= -99) {
+                    document.getElementById("result").textContent = "Sigh... So mean...";
+                    document.getElementById("f-word").textContent = "";
+                }
+
+                else if(count <= -60 && count >= -79) {
+                    document.getElementById("result").textContent = "Fake as hell";
+                    document.getElementById("f-word").textContent = "";
+                }
+
+                else if(count <= -40 && count >= -59) {
+                    document.getElementById("result").textContent = "No you don't";
+                    document.getElementById("f-word").textContent = "";
+                }
+
+                else if(count <= -20 && count >= -39) {
+                    document.getElementById("result").textContent = "Nah";
+                    document.getElementById("f-word").textContent = "";
+                }
+
+                else if(count < 0 && count >= -19) {
+                    document.getElementById("result").textContent = "Yeah yeah, whatever sweats";
+                    document.getElementById("f-word").textContent = "";
+                }
+
+                else if(count == 0) {
+                    document.getElementById("result").textContent = "Middle of the road, huh? Sigh";
+                    document.getElementById("f-word").textContent = "";
+                }
+
+                else if(count <= 19 && count >= 1) {
+                    document.getElementById("result").textContent = "Good enough, love you too, I guess";
+                    document.getElementById("f-word").textContent = "";
+                }
+
+                else if(count <= 39 && count >= 21) {
+                    document.getElementById("result").textContent = "Now we're getting somewhere";
+                    document.getElementById("f-word").textContent = "";
+                }
+
+                else if(count <= 59 && count >= 41) {
+                    document.getElementById("result").textContent = "Love you too stanks";
+                    document.getElementById("f-word").textContent = "";
+                }
+
+                else if(count <= 79 && count >= 61) {
+                    document.getElementById("result").textContent = "What a dame";
+                    document.getElementById("f-word").textContent = "";
+                }
+
+                else if(count <= 99 && count >= 81) {
+                    document.getElementById("result").textContent = "Sweet";
+                    document.getElementById("f-word").textContent = "";
+                }
+
+                else if(count == 100) {
+                    document.getElementById("result").textContent = "Love you lots dear, this was fun to make for the afternoon";
+                    document.getElementById("f-word").textContent = "";
+                }
+
+            });
+        </script>
+
+        <br>
+
+        
+
+    </body>
+</html>
